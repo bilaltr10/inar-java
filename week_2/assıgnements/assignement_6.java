@@ -1,4 +1,4 @@
-package week_2;
+package week_2.assıgnements;
 import java.util.*;
 //import java.lang.*;
 
