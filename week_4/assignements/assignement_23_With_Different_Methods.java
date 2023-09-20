@@ -37,7 +37,8 @@ public static void deductions(double grosspay, double federalTax , double stateT
     System.out.println("    State Withholding  %"+ Math.round(stateTax*100)+" : "+stateWithholding);
     double totalDeduction =federalWithholding+stateWithholding;
     System.out.println("    Total Deduction : " +totalDeduction);
-    System.out.println("Net Pay :"+(grosspay-totalDeduction));
+    System.out.println("Net Pay weekly :"+(grosspay-totalDeduction));
+    System.out.println("Net Pay montky :"+(grosspay-totalDeduction) * 4);
     }
 
 }

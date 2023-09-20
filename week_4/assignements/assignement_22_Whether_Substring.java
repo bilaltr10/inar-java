@@ -8,9 +8,9 @@ public class assignement_22_Whether_Substring {
         Scanner bilal = new Scanner(System.in);
 
         System.out.print("enter the first word : ");
-        String firstWord = bilal.next();
+        String firstWord = bilal.nextLine();
         System.out.print("Enter the second word : ");
-        String secondWord = bilal.next();
+        String secondWord = bilal.nextLine();
 
         if (firstWord.length()>secondWord.length()){
             boolean isSubstring = firstWord.contains(secondWord);
