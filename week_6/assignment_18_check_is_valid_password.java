@@ -3,7 +3,7 @@ package week_6;
 import java.util.Locale;
 import java.util.Scanner;
 
-public class assignment_16_check_is_valid_password {
+public class assignment_18_check_is_valid_password {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 

@@ -1,8 +1,9 @@
 package week_6;
 
 import java.util.Scanner;
-
-public class assignment_4 {
+//) Write a method with the following header to display
+//an integer in reverse order
+public class assignment_4_reverse_Integer {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 

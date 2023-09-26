@@ -2,7 +2,7 @@ package week_6;
 
 import java.util.Scanner;
 
-public class assignment_3 {
+public class assignment_3_whether_isPalindrom {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         System.out.println("Enter an integer : ");

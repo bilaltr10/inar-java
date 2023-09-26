@@ -6,6 +6,6 @@ public class assignement_44_yapılmadı {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
-        
+
     }
 }

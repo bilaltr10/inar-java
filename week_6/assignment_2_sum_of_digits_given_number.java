@@ -3,7 +3,7 @@ package week_6;
 import java.util.Scanner;
 //(Sum the digits in an integer) Write a method that computes the sum of the digits
 //in an integer. Use the following method header:
-public class assignment_2 {
+public class assignment_2_sum_of_digits_given_number {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
