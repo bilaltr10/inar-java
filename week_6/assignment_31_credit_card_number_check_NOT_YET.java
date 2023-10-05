@@ -9,36 +9,40 @@ public class assignment_31_credit_card_number_check_NOT_YET {
         System.out.println("Enter a credit card number as a long integer");
         long creditCardNumber = input.nextLong();
 
+        getPrefix(creditCardNumber, 16);
 
 
         if (isValid(creditCardNumber)) {
 
-               System.out.println(creditCardNumber+ " is valid");
-           }
-            else{
-               System.out.println(creditCardNumber+" is invalid ");
-           }
-
+            System.out.println(creditCardNumber + " is valid");
+        } else {
+            System.out.println(creditCardNumber + " is invalid ");
         }
+
+    }
 
 
     public static boolean isValid(long number) {
 
-      return (sumOfDoubleEvenPlace(number)+sumOfOddPlace(number))%10==0;
+        return (sumOfDoubleEvenPlace(number) + sumOfOddPlace(number)) % 10 == 0;
     }
 
     public static int sumOfDoubleEvenPlace(long number) {
         String str = convertNumberToString(number);
         int total = 0;
-        for (int i = 1; i <= str.length(); i += 2) {
 
-            if (str.charAt(i) * 2 < 10) {
-                total += str.charAt(i);
+        for (int i = str.length()-2; i >= 0; i -= 2) {
 
-            } else if (str.charAt(i) * 2 >= 10) {
+            int mm = str.charAt(i)-'0';
 
-                int a = str.charAt(i) * 2 % 10;
-                int b = str.charAt(i) * 2 / 10;
+            if (mm * 2 < 10) {
+                total +=mm*2;
+
+
+            } else if (mm * 2 >= 10) {
+
+                int a = mm * 2 % 10;
+                int b = mm * 2 / 10;
                 total += (a + b);
 
             }
@@ -57,37 +61,34 @@ public class assignment_31_credit_card_number_check_NOT_YET {
     public static int sumOfOddPlace(long number) {
         String str = convertNumberToString(number);
         int total = 0;
-        for (int i = 0; i < str.length(); i += 2) {
+        for (int i = str.length()-1; i >=0; i -= 2) {
+            total += (str.charAt(i)-'0');
 
-            total += str.charAt(i);
         }
 
         return total;
 
     }
 
-   //** Return the �rst k number of digits from number. If the
-   //* number of digits in number is less than k, return number. *
-  /*  public static long getPrefix (long number , int k){
+    public static long getPrefix(long number, int k) {
 
-    }*/
+        String str = convertNumberToString(number);
 
-
-
-
-
-
+        if (str.length() <= k) {
+            return getSize(number);
+        }
+        return -1;
+    }
 
 
+    public static int getSize(long number){
 
+return convertNumberToString(number).length();
 
-
-
-
-
-
+    }
 
 }
+
 
 
 

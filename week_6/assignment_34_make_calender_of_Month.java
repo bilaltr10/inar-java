@@ -21,16 +21,13 @@ public class assignment_34_make_calender_of_Month {
 
         int dayOfWeek = findTheDay(month, dayOfMonth, century, yearOfTheCentury);
 
-
         writeTheCalender(dayOfWeek, namesOfMonths(month), year, dayOfMonth);
+
+
     }
 
     public static int findTheDay(int month, int dayOfTheMonth, int century, int yearOfTheCentury) {
-        System.out.println(month);
-        System.out.println(dayOfTheMonth);
-        System.out.println(century);
-        System.out.println(yearOfTheCentury);
-        return ((dayOfTheMonth + ((26 * (month +1)) / 10) + yearOfTheCentury + (yearOfTheCentury / 4) + (century / 4) + (5 * century)) % 7);
+        return (dayOfTheMonth + ((26 * (month + 1)) / 10) + yearOfTheCentury + ((yearOfTheCentury / 4)) + (((century)/4)) + (5 * (century))) % 7;
 
     }
 
@@ -43,15 +40,13 @@ public class assignment_34_make_calender_of_Month {
         }
         if (month == 1 || month == 3 || month == 5 || month == 7 || month == 8 || month == 10 || month == 12) {
             return 31;
-        }
-        else if (month == 2) {
+        } else if (month == 2) {
             if ((year % 4 == 0 && !(year % 100 == 0)) || year == 400) {
                 return 29;
             } else {
                 return 28;
             }
-        }
-        else {
+        } else {
             return 30;
         }
 
@@ -73,7 +68,7 @@ public class assignment_34_make_calender_of_Month {
 
     public static int century(int year) {
 
-        return (year / 100) ;
+        return (year / 100);
     }
 
     public static int yearOfTheCentury(int year) {
@@ -102,7 +97,7 @@ public class assignment_34_make_calender_of_Month {
 
     public static void writeTheCalender(int dayOfWeek, String nameOfMonth, int year, int daysOfMonth) {
 
-        System.out.println(dayOfWeek);
+
         System.out.println("           " + nameOfMonth + "  " + year);
         System.out.println("--------------------------------");
         System.out.println("SAT  SUN  MON  THE  WED  THU  FRI  ");
