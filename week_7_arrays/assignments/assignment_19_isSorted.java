@@ -27,7 +27,7 @@ public class assignment_19_isSorted {
     public static boolean isSorted(int[] array) {
         boolean isSorted = true;
 
-        if (array[0] >= array[1]) {
+        if (array[0] > array[1]) {
 
             for (int i = 1; i < array.length - 1; i++) {
                 for (int j = 1; j < array.length - 1; j++) {

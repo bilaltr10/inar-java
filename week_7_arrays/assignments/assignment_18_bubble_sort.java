@@ -18,8 +18,8 @@ public class assignment_18_bubble_sort {
 
         System.out.println();
 
-        for (int i = 0; i < list.length-1 ; i++) {
-            for (int j = 0; j < list.length- 1; j++) {
+        for (int i = 0; i < list.length ; i++) {
+            for (int j = 0; j < list.length- 1-i; j++) {
 
                 if (list[j] > list[j + 1]) {
                     double temp = list[j];
