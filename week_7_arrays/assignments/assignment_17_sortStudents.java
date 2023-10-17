@@ -14,7 +14,6 @@ public class assignment_17_sortStudents {
         }
     }
     public static String[] sortTheStudents(String[] students, int[] notes) {
-        String[] sortedList = new String[students.length];
         for (int i = 0; i < students.length; i++) {
             for (int j = 0; j < students.length - i - 1; j++) {
                 if (notes[j] < notes[j + 1]) {

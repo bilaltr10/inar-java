@@ -1,9 +1,8 @@
 package week_7_arrays.assignments;
 
 import java.util.*;
-import java.math.*;
 
-public class assignment_16 {
+public class assignment_16_timeOf_linear_binary_search {
     static Scanner input = new Scanner(System.in);
 
     public static void main(String[] args) {
@@ -48,16 +47,14 @@ public class assignment_16 {
 
             if (list[middle] == key) {
                 break;
-            } else if (key >list[middle]) {
-                start = middle+1;
-
-            }else{
-                end = middle-1;
-
             }
+            else if (key >list[middle]) {
+                start = middle+1;
+            }
+            else{
+                end = middle-1;
+            }}
 
-
-        }
         long endOfTime = System.currentTimeMillis();
 
         return (int) (endOfTime - startTime);

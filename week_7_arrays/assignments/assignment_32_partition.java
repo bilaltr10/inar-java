@@ -43,13 +43,6 @@ public class assignment_32_partition {
 
                 }
                 count++;
-            }
-        }
-
-
-        return list;
-
-    }
-
+            }} return list;}
 }
 
