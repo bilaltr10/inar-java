@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class assignment_16 {
     static Scanner input = new Scanner(System.in);
-
+// {1,1} kayboluyor ???
     public static void main(String[] args) {
 
         int[][] list = new int[][]{{4, 2}, {1, 7}, {4, 5}, {1, 2}, {1, 1}, {4, 1}};
@@ -30,7 +30,8 @@ public class assignment_16 {
             for (int j = 0; j < list[0].length; j++) {
 
                 System.out.print(list[i][j] + " ");
-            }}}
+            }
+            System.out.println();}}
 
 
 
