@@ -9,7 +9,8 @@ public class Account {
 
     private final Date dateCreated = new Date();
 
-    Account() {
+    public Account() {
+        this(0,0,0);
     }
 
     //A constructor that creates an account with the specified id and initial balance.
@@ -17,6 +18,11 @@ public class Account {
         id = newId;
         balance = newBalance;
         annualInterestRate = newInterestRate;
+    }
+    public Account(int newId, double newBalance) {
+        id = newId;
+        balance = newBalance;
+
     }
     //The accessor and mutator methods for id, balance, and annualInterestRate.
 
@@ -60,11 +66,11 @@ public class Account {
         return balance*getMonthlyInterestRate();
     }
 
-    double withdraw(double amountOfWithdraw){
+    public double withdraw(double amountOfWithdraw){
         balance-=amountOfWithdraw;
         return balance;
     }
-    double deposit (double deposit){
+  public  double deposit (double deposit){
         balance += deposit;
         return balance;
     }
