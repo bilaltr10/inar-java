@@ -1,6 +1,8 @@
 package week_12.Q_5;
 
-import week_11.Q_1.Q.GeometricObject;
+
+
+import week_11.Q_1.GeometricObject;
 
 import java.util.Scanner;
 

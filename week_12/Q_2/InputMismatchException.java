@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class InputMismatchException {
     public static void main(String[] args) {
+        var isim = "isim";
 
         Scanner input = new Scanner(System.in);
         boolean isValid = false;
@@ -12,8 +13,8 @@ public class InputMismatchException {
         do {
             try {
                 System.out.println("Enter two integers to sum ");
-                 num1 = input.nextInt();
-                 num2 = input.nextInt();
+                num1 = input.nextInt();
+                num2 = input.nextInt();
                 isValid = true;
             } catch (Exception ex) {
                 System.out.println("Nonnumeric operand : " + ex);

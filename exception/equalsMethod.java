@@ -2,7 +2,7 @@ package exception;
 
 public class equalsMethod {
     public static void main(String[] args) {
-        String xx = "Bilal";
+        String xx = "   Bil al   ";
         String yy = "Bilal";
         String zz = "Hilal";
 

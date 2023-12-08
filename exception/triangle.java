@@ -1,6 +1,6 @@
 package exception;
 
-import week_11.Q_1.Q.Triangle;
+import week_11.Q_1.Triangle;
 
 public class triangle  extends Shapes{
     int a ;
