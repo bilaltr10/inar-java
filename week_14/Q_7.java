@@ -13,9 +13,9 @@ public class Q_7 {
             list.add((int) (Math.random() * 100));
         }
         System.out.println(list);
-        int randon = (int) (Math.random() * list.size());
-        System.out.println("k : " + randon);
+        int random = (int) (Math.random() * list.size());
+        System.out.println("k : " + random);
         Collections.sort(list);
-        System.out.println(randon + "th element is " + list.get(randon));
+        System.out.println(random+ "th element is " + list.get(random));
     }
 }
